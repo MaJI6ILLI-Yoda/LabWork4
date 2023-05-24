@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  background-image: url("Booking.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #f2f2f2;
+  color: #374151;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  min-width: 470px !important; min-height: 755px !important;
+  background-color: #ffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: inline-block;
+  position: absolute;
+  height: 755px;
+  width: 470px;
+  right: 230px;
+}
+.form__header {
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.form__header h1 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #aa8b52;
+  margin: 0;
+}
+.form__header hr {
+  background: #d7dbdf;
+  opacity: 0.5;
+}
+.form__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form__group--label {
+  line-height: 19px;
+  font-size: 16px;
+  display: inline-block;
+}
+.form__group {
+  margin-left: 30px;
+  margin-bottom: 16px;
+}
+.form__group__nothing {
+  margin-right: 0px;
+}
+.form__group__left {
+  margin-left: 30px;
+}
+.form__group__right {
+  margin-right: 30px;
+}
+.form__control--grow {
+    height: 140px !important;
+    display: inline-block;
+  }
+.form__control__big {
+  background: #ffffff;
+  border: 1px solid #aa8b52;
+  border-radius: 6px;
+  padding: 8px;
+  height: 50px;
+  min-width: 410px;
+}
+.form__control__small {
+  background: #ffffff;
+  border: 1px solid #aa8b52;
+  border-radius: 6px;
+  padding: 8px;
+  height: 50px;
+  min-width: 115px;
+}
+.form__checkbox {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
+.form__checkbox input {
+  display: none;
+}
+.form__checkbox input[type="checkbox"]:checked ~ .form__checkbox--label::before {
+  background: #aa8b52 !important;
+}
+.form__checkbox--label::before {
+  content: "";
+  margin-right: 8px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #aa8b52;
+  vertical-align: middle;
+}
+.form__submit {
+  margin-right: 25px;
+  padding: 18px 156px;
+  font-weight: 500;
+  color: #ffff;
+  border: 1px solid #d2d6db;
+  background-color: #aa8b52;
+  border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+  margin-left: auto;
+  
+}
+.form__submit:hover {
+  background: #c09f5d;
+  transition: 0.35s;  
+}
